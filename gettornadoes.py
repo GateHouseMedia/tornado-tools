@@ -13,6 +13,7 @@ baseurlpre = "https://www.spc.noaa.gov/climo/reports/"
 # baseurlpost = "_rpts_torn.csv"
 baseurlpost = "_rpts_filtered.csv"
 compositecsv = "composite.csv"
+filepre = "Daily"
 datadir = "data/"
 startdateraw = "2019-05-01"
 enddateraw = "Today"   # YYYY-mm-dd or "Today"
@@ -29,7 +30,7 @@ deltadays = (enddate - startdate).days
 
 for i in tqdm(range(0, deltadays + 1)):
     targetdate = startdate + datetime.timedelta(days=i)
-    targetfilename = datadir + "Daily" + targetdate.strftime("%Y-%m-%d.csv")
+    targetfilename = datadir + filepre + targetdate.strftime("%Y-%m-%d.csv")
     targeturl = baseurlpre + targetdate.strftime("%y%m%d") + baseurlpost
     with open(targetfilename, "wb") as f:
         r = requests.get(targeturl)
@@ -39,13 +40,13 @@ for i in tqdm(range(0, deltadays + 1)):
             print(f"Error retrieving file from {targeturl}")
 
 headers = None
-sourcecsvs = list(glob.glob(datadir + "Daily*.csv"))
+sourcecsvs = list(glob.glob(datadir + filepre + "*.csv"))
 with open(compositecsv, "w", newline="", encoding="utf-8") as compositecsvhandle:
     writer = csv.writer(compositecsvhandle)
     for sourcecsv in sourcecsvs:
         with open(sourcecsv, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
-            mydate = sourcecsv.replace("\\", "/").replace(datadir, "").replace(".csv", "")
+            mydate = sourcecsv.replace("\\", "/").replace(datadir, "").replace(".csv", "").replace(filepre, "")
             # print(mydate)
             try:
                 for row in reader:
