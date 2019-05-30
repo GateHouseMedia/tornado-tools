@@ -29,7 +29,7 @@ deltadays = (enddate - startdate).days
 
 for i in tqdm(range(0, deltadays + 1)):
     targetdate = startdate + datetime.timedelta(days=i)
-    targetfilename = datadir + targetdate.strftime("%Y-%m-%d.csv")
+    targetfilename = datadir + "Daily" + targetdate.strftime("%Y-%m-%d.csv")
     targeturl = baseurlpre + targetdate.strftime("%y%m%d") + baseurlpost
     with open(targetfilename, "wb") as f:
         r = requests.get(targeturl)
@@ -39,7 +39,7 @@ for i in tqdm(range(0, deltadays + 1)):
             print(f"Error retrieving file from {targeturl}")
 
 headers = None
-sourcecsvs = list(glob.glob(datadir + "*.csv"))
+sourcecsvs = list(glob.glob(datadir + "Daily*.csv"))
 with open(compositecsv, "w", newline="", encoding="utf-8") as compositecsvhandle:
     writer = csv.writer(compositecsvhandle)
     for sourcecsv in sourcecsvs:
