@@ -40,20 +40,23 @@ for i in tqdm(range(0, deltadays + 1)):
 
 headers = None
 sourcecsvs = list(glob.glob(datadir + "*.csv"))
-with open(compositecsv, "w", newline="") as compositecsvhandle:
+with open(compositecsv, "w", newline="", encoding="utf-8") as compositecsvhandle:
     writer = csv.writer(compositecsvhandle)
     for sourcecsv in sourcecsvs:
-        with open(sourcecsv, "r") as f:
+        with open(sourcecsv, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             mydate = sourcecsv.replace("\\", "/").replace(datadir, "").replace(".csv", "")
             # print(mydate)
-            for row in reader:
-                if not headers:
-                    headers = ["mydate"]
-                    headers.extend(list(row.keys()))
-                    writer.writerow(headers)
-                if row['Time'] == "Time":   # if we're out of the tornado reports and into another section
-                    break
-                line = [mydate]
-                line.extend(list(row.values()))                
-                writer.writerow(line)
+            try:
+                for row in reader:
+                    if not headers:
+                        headers = ["mydate"]
+                        headers.extend(list(row.keys()))
+                        writer.writerow(headers)
+                    if row['Time'] == "Time":   # if we're out of the tornado reports and into another section
+                        break
+                    line = [mydate]
+                    line.extend(list(row.values()))                
+                    writer.writerow(line)
+            except:
+                print(f"Something broke on {sourcecsv}")
