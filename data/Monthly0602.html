@@ -1,0 +1,936 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Storm Prediction Center Monthly Climatology - February 2006</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP/SPC Web Team" name="GENERATOR">
+  <link href="/misc/spccwi.css" type="text/css" rel="STYLESHEET">
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="description"
+   content="Severe weather, tornado, thunderstorm, damage reports,
+   storm report, tornadoes, compiled by the Storm Prediction Center.">
+  <meta name="keywords"
+   content="severe weather, wx, tornado, thunderstorm, storm report, tornado research,
+   severe weather research, severe thunderstorm, hail damage, wind damage,
+   damaging downbursts, damaging winds, microbursts, natural hazard, climatology,
+   NWS, NCEP, SPC, Storm Prediction Center">
+
+   <script language="JavaScript" type="text/JavaScript">
+   function showtab(val)
+   {
+   if (val == 1) { g1 = "0602_map_all.gif";
+                   g2 = "0602_graf_all.gif"; }
+   if (val == 2) { g1 = "0602_map_torn.gif";
+                   g2 = "0602_graf_torn.gif"; }
+   if (val == 3) { g1 = "0602_map_wind.gif";
+                   g2 = "0602_graf_wind.gif"; }
+   if (val == 4) { g1 = "0602_map_hail.gif";
+                   g2 = "0602_graf_hail.gif"; }
+   document.graf.src=g2;
+   document.map.src=g1;
+   }
+   </script>
+</head>
+
+<a name="top"></a>
+<body leftmargin="0" background="/nwscwi/nws_background.gif"
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<!-- Header here-->
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/topbanner.jpg" border="0">
+  <tr>
+    <td align="right" height="19">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links"
+         src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+      <a href="//www.weather.gov/" target="_blank"><span class="nwslink">weather.gov</span></a>&nbsp;</td>
+  </tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td rowspan="2"><a href="//www.noaa.gov/" target="_blank"><img src="/nwscwi/noaaleft.jpg" alt="NOAA logo-Select to go to the NOAA homepage" width="85" height="78" border="0" /></a></td>
+<!--
+    <td width="500" height="20" align="center" nowrap background="/nwscwi/blank_title.jpg"><a href="//www.weather.gov/" target="_blank"><span class="regionwhite">NOAA's National Weather Service</span></a></td>
+-->
+    <td><img src="/nwscwi/noaa_nws_title.jpg" width="500" height="20" border="0" alt="NOAA's National Weather Service"></td>
+    <td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+    <td rowspan="2" align="right"><a href="//www.weather.gov/" target="_blank"><img src="/nwscwi/nwsright.jpg" alt="Select to go to the NWS homepage" width="85" height="78" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="/"><img height="58" alt="Storm Prediction Center" src="/nwscwi/spc.jpg" width="500" border="0"></td>
+  </tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+  <tr>
+    <td align="left" valign="top" width="94"><img height="23" alt="navigation bar left" src="/nwscwi/navbarleft.jpg" width="94" border="0"></td>
+    <td class="nav" id="menuitem" align="center" width="15%">
+      <a href="/sitemap.html">Site Map</a></td>
+    <td class="nav" id="menuitem" align="right" width="15%">
+      <a href="//www.weather.gov/pa/">News</a></td>
+    <td class="nav" id="menuitem" align="right" width="20%">
+      <a href="//www.weather.gov/organization.php">Organization</a></td>
+    <td width="20%">&nbsp;</td>
+    <td align="left" class="searchinput" width="20%" nowrap="nowrap"><!-- Begin search code -->
+
+<!--
+      <form accept-charset="UTF-8" action="//search.usa.gov/search" id="search_form" method="get">
+        <div style="margin:0;padding:0;display:inline">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+        </div>
+        <input id="affiliate" name="affiliate" type="hidden" value="spc" />
+        <label for="query" class="yellow">Search for:&nbsp;</label>
+        <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text" />
+        <input name="commit" type="submit" value="Go" />
+      </form>
+-->
+
+      <form accept-charset="UTF-8" action="//search.usa.gov/search" id="search_form" method="get">
+        <div style="margin:0;padding:0;display:inline">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+        </div>
+<!--
+        <input id="affiliate" name="affiliate" type="hidden" value="spc" />
+-->
+        <label for="query" class="yellow">Search for:&nbsp;</label>
+        <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text" />
+        <input type="radio" id="affiliate" name="affiliate" checked="checked" value="spc" id="spc" />
+        <label class="yellow" for="spc">SPC</label>
+        <input type="radio" id="affiliate" name="affiliate" value="ncep.noaa.gov" id="ncep" />
+        <label class="yellow" for="ncep">NCEP</label>
+        <input type="radio" id="affiliate" name="affiliate" value="noaa.gov" id="noaa" />
+        <label class="yellow" for="noaa">All NOAA</label>
+        <input name="commit" type="submit" value="Go" />
+      </form>
+
+      <script type="text/javascript">
+        //<![CDATA[
+          var usasearch_config = { siteHandle:"spc" };
+
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "//search.usa.gov/javascripts/remote.loader.js";
+          document.getElementsByTagName("head")[0].appendChild(script);
+
+        //]]>
+      </script>
+
+<!--
+      <form method="get" action="//search.usa.gov/search">
+        <input type="hidden" name="v:project" value="firstgov" />
+        <label for="query" span class="yellow">Search for:&nbsp;&nbsp;</label>
+        <input type="text" name="query" id="query" size="10"/>
+        <input type="radio" name="affiliate" checked="checked" value="spc"" id="spc" />
+        <label class="yellow" for="spc">SPC</label>
+        <input type="radio" name="affiliate" value="ncep.noaa.gov"" id="ncep" />
+        <label class="yellow" for="ncep">NCEP</label>
+        <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+        <label class="yellow" for="noaa">All NOAA</label>
+        <input type="submit" value="Go"  /></label>
+      </form>
+-->
+    </td><!-- End search code -->
+    <td width="10%">&nbsp;</td>
+    <td align="right" valign="bottom" width="24"><img src="/nwscwi/navbarendcap.jpg" alt="navigation bar end cap" width="24" height="23" border="0" /></td>
+  </tr>
+
+</table>
+
+
+<table cellspacing="0" cellpadding="0" width="670" border="0">
+  <tr valign="top">
+    <td width="130" bgcolor="#0a2390"><br />
+
+<!-- Left menu here-->
+<!--Use google lib for jquery -->
+<script type="text/javascript" src="/misc/js/jquery.min.js"></script>
+<script type="text/javascript" src="/misc/js/nwsexit-spc.js"></script>
+
+<table cellspacing="0" cellpadding="2" width="130" border="0">
+        <tr valign="top">
+          <td class="searchinput" align="left">
+            <form method="post" action="//forecast.weather.gov/zipcity.php">
+              <div ID="Layer2" STYLE="position:absolute; width:200px;  height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+              <span class="yellow"><label for="city_state">Local&nbsp;forecast&nbsp;by<br />&quot;City,&nbsp;St&quot;&nbsp;or&nbsp;&quot;ZIP&quot;</label></span><br />
+              <input type="text" id="city_state" name="inputstring" size="10" value="City, St" onfocus="this.value='';" />&nbsp;
+              <input type="submit" name="Go2" value="Go" />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="white" id="menuitem">
+            <hr width="90%"/>
+            <div style="text-align:center;">
+              <span><a href="https://www.facebook.com/NWSSPC" target="SPC_Facebook" title="NOAA NWS Storm Prediction Center Facebook"><img src="/misc/facebook_logo.gif" style="border: 0px;" /><br />SPC on Facebook</a></span>
+              <hr width="80%"/>
+              <span><a href="https://twitter.com/NWSSPC" target="_blank" title="NOAA NWS Storm Prediction Center Twitter"><img src="/misc/twitter-bird-light-bgs.png" style="border: 0px;height: 40px;width: 40px;vertical-align: middle;" />@NWSSPC</a></span>
+              <hr width="80%"/>
+              <span class="yellow"><a href="//www.ncep.noaa.gov/newsletter/" target="NCEP_Newsletter">NCEP Quarterly Newsletter</a></span>
+            </div>
+            <hr width="90%"/>
+            <a href="/"><span class="yellow">Home</span></a>&nbsp;(<a href="/classic.html" target="_blank"><span class="yellow">Classic</span></a>)<br />
+            <span class="yellow">SPC&nbsp;Products</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/">All&nbsp;SPC&nbsp;Forecasts</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/watch/">Current&nbsp;Watches</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/md/">Meso.&nbsp;Discussions</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/outlook/">Conv.&nbsp;Outlooks</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/exper/enhtstm/">Tstm.&nbsp;Outlooks</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/fire_wx/overview.html">Fire&nbsp;Wx&nbsp;Outlooks</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/spcrss.xml"><img src="/nwscwi/xml2.gif" alt="XML logo" border="0" height="13" width="13"></a>&nbsp;<a href="/aboutrss.html">RSS&nbsp;Feeds</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//www.weather.gov/subscribe/">E-Mail Alerts</a><br />
+	    
+	    <span class="yellow">Weather&nbsp;Information</span><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/climo/online/">Storm&nbsp;Reports</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/exper/reports/">Storm&nbsp;Reports&nbsp;Dev.</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="//www.weather.gov/largemap.php" target="NWS_Hazards">NWS&nbsp;Hazards&nbsp;Map</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//www.weather.gov/Radar/" target="radar_window">National&nbsp;RADAR</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/archive/">Product&nbsp;Archive</a><br />
+            &nbsp;&nbsp;&nbsp;<A href="//www.weather.gov/nwr/" target="NWR_window">NOAA&nbsp;Weather&nbsp;Radio</a><br />
+
+            <span class="yellow">Research</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/exper/">Non-op.&nbsp;Products</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/exper/">Forecast&nbsp;Tools</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/exper/archive/events/">Svr.&nbsp;Tstm.&nbsp;Events</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/publications/">SPC&nbsp;Publications</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//hwt.nssl.noaa.gov/" target="NOAA_HWT">SPC-NSSL&nbsp;HWT</a><br />
+
+            <span class="yellow">Education&nbsp;&&nbsp;Outreach</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/misc/aboutus.html">About&nbsp;the&nbsp;SPC</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/faq/">SPC&nbsp;FAQ</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/faq/tornado/">About&nbsp;Tornadoes</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/misc/AbtDerechos/derechofacts.htm">About&nbsp;Derechos</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/exper/spcousom">Video&nbsp;Lecture&nbsp;Series</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/wcm/">WCM&nbsp;Page</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/efscale/">Enh.&nbsp;Fujita&nbsp;Page</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/history/early.html">Our&nbsp;History</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="http://nwc.ou.edu/tours/" target="_blank">Public&nbsp;Tours</a><br />
+
+            <span class="yellow">Misc.</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/staff/">Staff</a><br />
+            <!-- &nbsp;&nbsp;&nbsp;<a href="/misc/links.html">Links</a><br /> -->
+
+            <span class="yellow">Contact&nbsp;Us</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/misc/feedback.html">SPC&nbsp;Feedback</a><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><a href="//www.USA.gov/"><img src="/misc/usagov_logo_color_110w_30h.gif" alt="USA.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a></td>
+        </tr>
+      </table>
+
+    </td>
+    <td width="10">&nbsp;</td>
+    <td valign="top" align="center" width="560">
+
+<!--****************************************************************-->
+<!--***********************PAGE CONTENT HERE************************-->
+<!--****************************************************************-->
+
+<table width="530" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><div align="center"> <font size="4" face="Arial, Helvetica, sans-serif"><strong>
+        Monthly Severe Weather Summary<br>
+        February 2006</strong><br>
+        <font size="1"><a href="2006_annual_summary.html">[RETURN TO ANNUAL SUMMARY]</a></font><br>
+        <font color="#0000FF" size="2"><em>* Data is preliminary and subject to revision</em></font></font><br>
+        <br>
+        <table width="535" border="0" cellspacing="0" cellpadding="1">
+          <tr>
+            <td bgcolor="#000066"><font size="2" face="Arial, Helvetica, sans-serif"><strong>&nbsp;&nbsp;<font color="#FFFF00">&nbsp;
+			<a href="#" OnMouseOver="showtab('1')"><font color="yellow">All Reports</font></a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#" OnMouseOver="showtab('2')"><font color="yellow">Tornadoes</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#" OnMouseOver="showtab('3')"><font color="yellow">Wind Damage</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#" OnMouseOver="showtab('4')"><font color="yellow">Large Hail</font></a></font></strong></font></td>
+          </tr>
+          <tr>
+            <td colspan="4"><img src="0602_map_all.gif" name="map" width="565" height="405" border="1" id="map"><br>
+              <img src="0602_graf_all.gif" name="graf" width="565" height="165" border="1" id="graf"></td>
+          </tr>
+        </table>
+        <br>
+
+        <table width="100%">
+          <tr><td valign="top">
+            <font color="#000099" face="Arial, Helvetica, sans-serif"><strong>Daily Tabulation - February 2006</strong></font>
+            <table width="40%" border="1" cellpadding="2" cellspacing="0" bordercolor="#BBBBBB" bgcolor="#FFFFFF">
+              <tr bgcolor="#000099">
+              <td width="12%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Day</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Total</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Torn</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Hail</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Wind</font></font></div></td>
+            </tr>
+            <tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060201_rpts.html">02/01/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">10</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">7</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060202_rpts.html">02/02/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">8</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">5</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060203_rpts.html">02/03/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">112</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">100</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">12</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060204_rpts.html">02/04/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">16</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">12</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060205_rpts.html">02/05/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060206_rpts.html">02/06/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">4</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">4</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060207_rpts.html">02/07/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060208_rpts.html">02/08/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060209_rpts.html">02/09/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060210_rpts.html">02/10/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060211_rpts.html">02/11/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060212_rpts.html">02/12/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060213_rpts.html">02/13/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060214_rpts.html">02/14/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060215_rpts.html">02/15/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060216_rpts.html">02/16/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">133</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">4</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">75</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">54</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060217_rpts.html">02/17/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">26</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">25</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060218_rpts.html">02/18/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060219_rpts.html">02/19/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060220_rpts.html">02/20/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060221_rpts.html">02/21/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060222_rpts.html">02/22/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060223_rpts.html">02/23/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060224_rpts.html">02/24/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060225_rpts.html">02/25/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060226_rpts.html">02/26/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060227_rpts.html">02/27/2006</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href="http://www.spc.noaa.gov/climo/reports/060228_rpts.html">02/28/2006</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">TOTAL</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">314</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">12</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">190</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">112</font></div></td>
+</tr>
+
+            </table>
+		    </font>
+		  </td><td valign="top">
+            <font color="#000099" face="Arial, Helvetica, sans-serif"><strong>State Tabulation - February 2006</strong></font>
+            <table width="40%" border="1" cellpadding="2" cellspacing="0" bordercolor="#BBBBBB" bgcolor="#FFFFFF">
+              <tr bgcolor="#000099">
+              <td width="12%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">State</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Total</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Torn</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Hail</font></font></div></td>
+              <td width="22%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#FFFFFF">Wind</font></font></div></td>
+            </tr>
+            <tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=AL">AL</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">9</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">6</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=AK">AK</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=AZ">AZ</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=AR">AR</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">13</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">9</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">4</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=CA">CA</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=CO">CO</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=CT">CT</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=DE">DE</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=FL">FL</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">39</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">37</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=GA">GA</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">13</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">10</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=HI">HI</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=ID">ID</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=IL">IL</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">33</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">23</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">9</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=IN">IN</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">33</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">7</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">25</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=IA">IA</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=KS">KS</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=KY">KY</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">5</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">5</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=LA">LA</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">26</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">18</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">6</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=ME">ME</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MD">MD</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MA">MA</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MI">MI</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">4</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MN">MN</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MS">MS</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">43</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">38</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">5</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MO">MO</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">48</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">38</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">8</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=MT">MT</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NE">NE</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NV">NV</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NH">NH</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NJ">NJ</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">7</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">7</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NM">NM</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NY">NY</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">13</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">12</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=NC">NC</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=ND">ND</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=OH">OH</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=OK">OK</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=OR">OR</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=PA">PA</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">7</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">7</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=RI">RI</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=SC">SC</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">4</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=SD">SD</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=TN">TN</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=TX">TX</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=UT">UT</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=VT">VT</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=VA">VA</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">6</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">2</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">1</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">3</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=WA">WA</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=WV">WV</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=WI">WI</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=WY">WY</a></font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif"><a href = "states.php?month=02&year=2006&state=DC">DC</a></font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+<td bgcolor="DDDDDD"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">0</font></div></td>
+</tr>
+<tr>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">TOTAL</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">314</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">12</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">190</font></div></td>
+<td bgcolor="FFFFFF"><div align="center"><font size="2"face="Arial, Helvetica, sans-serif">112</font></div></td>
+</tr>
+
+            </table>
+          </td></tr>
+        </table>
+        </td>
+  </tr>
+</table>
+
+<br>
+<font size="1" face="Arial, Helvetica, sans-serif">If you have comments regarding
+this information, contact <a href="mailto:john.hart@noaa.gov?subject=[Monthly Summary Comment]">John
+Hart</a> of the Storm Prediction Center. </font>
+
+
+
+<!--****************************************************************-->
+<!--****************************************************************-->
+<!-- Footers begin here-->
+    <center>
+  <table cellspacing="2" cellpadding="2" border="0">
+    <tr align="center">
+    <td>Weather Topics:<br />
+      <a href="/products/watch/">Watches</a>,
+      <a href="/products/md/">Mesoscale Discussions</a>,
+      <a href="/products/outlook/">Outlooks</a>,
+      <a href="/products/fire_wx/">Fire Weather</a>,
+      <a href="/products/">All Products</a>,
+      <a href="/misc/feedback.html">Contact Us</a></td>
+    </tr>
+  </table>
+  <table cellspacing="6" cellpadding="0" width="98%" border="0">
+    <tr>
+      <td colSpan="3"><hr></td>
+    </tr>
+    <tr valign="top" align="left">
+      <td class="gray">
+        <a href="//www.noaa.gov/"><span class="gray">NOAA</span></a>&nbsp;/
+        <a href="//www.nws.noaa.gov/"><span class="gray">National Weather Service</span></a><br />
+        <a href="//www.ncep.noaa.gov/"><span class="gray">National Centers for Environmental Prediction</span></a><br />
+        <a href="/"><span class="gray">Storm Prediction Center</span></a><br />
+        120 David L. Boren Blvd.<br />
+        Norman, OK 73072 U.S.A.<br />
+        <a href="mailto:spc.feedback@noaa.gov?subject=[SPC web feedback]"><span class="gray">spc.feedback@noaa.gov</span></a><br />
+
+
+Page last modified:
+
+
+January 20, 2009</td>
+
+      <td align="left">
+        <a href="//www.weather.gov/disclaimer">
+          <span class="gray">Disclaimer</span></a><br />
+        <a href="//www.cio.noaa.gov/services_programs/info_quality.html">
+          <span class="gray">Information Quality</span></a><br />
+        <a href="//www.weather.gov/help">
+          <span class="gray">Help</span></a><br />
+        <a href="//www.weather.gov/glossary">
+          <span class="gray">Glossary</span></a>
+      </td>
+      <td align="right">
+        <a href="//www.weather.gov/privacy">
+          <span class="gray">Privacy Policy</span></a><br />
+        <a href="//www.rdc.noaa.gov/%7Efoia/">
+          <span class="gray">Freedom of Information Act (FOIA)</span></a><br />
+        <a href="//www.weather.gov/about">
+          <span class="gray">About Us</span></a><br />
+        <a href="//www.weather.gov/careers">
+          <span class="gray">Career Opportunities</span></a>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript" async="true" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=SPC&pua=UA-52727918-1"></script>
+
+<script type="text/javascript">
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript async src='/misc/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+</script>
+
+<script async type="text/javascript" src="/misc/js/nwsexit-spc-min.js"></script>
+
+    </center>
+    </td>
+  </tr>
+</table>
+
+<!-- Footers end here-->
+
+</table>
+</body>
+</html>
+
