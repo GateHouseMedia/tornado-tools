@@ -16,7 +16,7 @@ MaxDaysOld = 30   # Re-download every file newer than XX days old
 baseurlpre = "https://www.spc.noaa.gov/climo/reports/"
 # baseurlpost = "_rpts_torn.csv"
 baseurlpost = "_rpts_filtered.csv"
-compositecsv = "composite.csv"
+compositecsv = "DailyComposite-"
 filepre = "Daily"
 datadir = "data/"
 startdateraw = "2012-01-01"
@@ -25,6 +25,7 @@ enddateraw = "Today"   # YYYY-mm-dd or "Today"
 os.makedirs(datadir, exist_ok=True)
 
 timenow  = datetime.datetime.now()   # Don't alter.
+timestampnow = datetime.datetime.strftime(timenow, "%Y-%m-%d_%I%M%p")
 
 if enddateraw == "Today":
     enddate = datetime.datetime.now()
@@ -54,7 +55,7 @@ for i in tqdm(range(0, deltadays + 1)):
 
 headers = None
 sourcecsvs = list(glob.glob(datadir + filepre + "*.csv"))
-with open(compositecsv, "w", newline="", encoding="utf-8") as compositecsvhandle:
+with open(f"{compositecsv}{timestampnow}.csv", "w", newline="", encoding="utf-8") as compositecsvhandle:
     writer = csv.writer(compositecsvhandle)
     for sourcecsv in sourcecsvs:
         with open(sourcecsv, "r", encoding="utf-8") as f:
